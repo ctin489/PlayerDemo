@@ -1,0 +1,1 @@
+This project demonstrates how to create a player character and add it to the game using the Flixel framework. 
