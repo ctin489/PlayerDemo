@@ -8,7 +8,7 @@ package edu.usc.interactive
 	{
 		public function PlayerDemo()
 		{
-			super(640,480,PlayState,1);
+			super(640,480,MenuState,1);
 		}
 	}
 }

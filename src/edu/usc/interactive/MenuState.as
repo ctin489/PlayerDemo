@@ -7,7 +7,7 @@ package edu.usc.interactive
 		override public function create():void
 		{
 			var t:FlxText;
-			t = new FlxText(0,FlxG.height/2-10,FlxG.width,"PlayerDemo");
+			t = new FlxText(0,FlxG.height/2-10,FlxG.width,"Player Demo");
 			t.size = 16;
 			t.alignment = "center";
 			add(t);

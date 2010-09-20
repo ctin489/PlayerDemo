@@ -13,7 +13,7 @@ package edu.usc.interactive
 		public function Player(X:int, Y:int) 
 		{
 			super(X, Y);
-			
+			FlxState.bgColor = 0xFFFFFF;
 			//basic player physics
 			drag.x = runSpeed*8;
 			drag.y = runSpeed*8;
@@ -72,11 +72,12 @@ package edu.usc.interactive
 				play("runBackward");
 			}
 			
-			//Screen boundary
-			if (x < 0 || x > FlxG.width || y < 0 || y > FlxG.height)
+
+			
+			if (!onScreen())
 			{
-				x = FlxG.width / 2;
-				y = FlxG.height/2;
+				x = FlxG.width / 2 - width/2;
+				y = FlxG.height/2 - height/2;
 			}
 			
 			super.update();
